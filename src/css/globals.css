@@ -1,0 +1,14 @@
+@import './additional-styles/tailwind.css';
+@import './additional-styles/shadcn-ui.css';
+@import './additional-styles/loader-custom.css';
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease;
+}
