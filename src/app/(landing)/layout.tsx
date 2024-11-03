@@ -3,5 +3,5 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return <div className='overflow-hidden dark:bg-black-100'>{children}</div>
+  return <div className='overflow-hidden dark:bg-black-100 sm:overflow-clip'>{children}</div>
 }

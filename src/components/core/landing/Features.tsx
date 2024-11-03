@@ -35,7 +35,7 @@ export default function Features() {
     }
   ]
   return (
-    <div className='relative z-20 mx-auto max-w-7xl py-10 lg:py-40'>
+    <div className='relative z-20 mx-auto max-w-7xl py-10 lg:py-40' id='about'>
       <div className='px-8'>
         <h4 className='mx-auto max-w-5xl text-center text-3xl font-medium tracking-tight text-black dark:text-white lg:text-5xl lg:leading-tight'>
           Mục tiêu

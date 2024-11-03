@@ -253,7 +253,7 @@ export default function TimeLine() {
   ]
   return (
     <Container className='relative z-20 mx-auto max-w-7xl py-10 lg:py-40'>
-      <div className='px-8'>
+      <div className='px-8' id='time-line'>
         <h4 className='mx-auto max-w-5xl text-center text-3xl font-medium tracking-tight text-black dark:text-white lg:text-5xl lg:leading-tight'>
           Time Line
         </h4>

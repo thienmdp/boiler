@@ -1,6 +1,5 @@
 import { PublicNavbar } from '@/components/global/public-navbar'
 import { ThemeProvider } from '@/components/theme-provider'
-import { navItemsPublic } from '@/constants/router'
 import '@/css/globals.css'
 import { cn } from '@/lib/utils'
 import type { Metadata } from 'next'
@@ -34,10 +33,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning={true}>
-      <body className={cn('min-h-screen overflow-x-hidden font-sans antialiased', fontSans.variable)}>
+      <body
+        suppressHydrationWarning={true}
+        className={cn('min-h-screen overflow-x-hidden font-sans antialiased', fontSans.variable)}
+      >
         <TopProgressBar />
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-          <PublicNavbar navItems={navItemsPublic} />
+          <PublicNavbar />
           <Toaster
             toastOptions={{
               duration: 1000,

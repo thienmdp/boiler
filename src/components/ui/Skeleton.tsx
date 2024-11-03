@@ -7,10 +7,9 @@ import { Globe } from './globe'
 
 export const SkeletonOne = () => {
   return (
-    <div className='relative flex gap-10 px-2 py-8'>
-      <div className='group mx-auto w-full bg-white p-5 shadow-2xl dark:bg-neutral-900'>
+    <div className='relative flex gap-10'>
+      <div className='group mx-auto w-full bg-white p-5 shadow-2xl dark:bg-black-200'>
         <div className='flex w-full flex-1 flex-col space-y-2'>
-          {/* TODO */}
           <Image
             src='/assets/nhantaidatviet_2017.png'
             alt='header'
@@ -21,8 +20,8 @@ export const SkeletonOne = () => {
         </div>
       </div>
 
-      <div className='bg-gradient-to-t pointer-events-none absolute inset-x-0 bottom-0 z-40 h-60 w-full from-white via-white to-transparent dark:from-black dark:via-black' />
-      <div className='bg-gradient-to-b pointer-events-none absolute inset-x-0 top-0 z-40 h-60 w-full from-white via-transparent to-transparent dark:from-black' />
+      <div className='pointer-events-none absolute inset-x-0 bottom-0 z-40 h-60 w-full bg-gradient-to-t from-white via-white to-transparent dark:from-black dark:via-black' />
+      <div className='pointer-events-none absolute inset-x-0 top-0 z-40 h-60 w-full bg-gradient-to-b from-white via-transparent to-transparent dark:from-black' />
     </div>
   )
 }
@@ -36,7 +35,6 @@ export const SkeletonThree = () => {
     >
       <div className='group mx-auto h-full w-full bg-transparent dark:bg-transparent'>
         <div className='relative flex h-full w-full flex-1 flex-col space-y-2'>
-          {/* TODO */}
           <Icons.youtube className='absolute inset-0 z-10 m-auto h-20 w-20 text-red-500' />
           <Image
             src='/assets/nhantaidatviet_2017.png'
@@ -52,6 +50,7 @@ export const SkeletonThree = () => {
 }
 
 export const SkeletonTwo = () => {
+  const rotations = [3.07, -5.36, 4.5]
   const images = [
     '/assets/nhantaidatviet_2017.png',
     '/assets/nhantaidatviet_2017.png',
@@ -71,16 +70,13 @@ export const SkeletonTwo = () => {
     }
   }
   return (
-    <div className='relative flex h-full flex-col items-center justify-center gap-10 overflow-hidden p-8'>
-      {/* TODO */}
+    <div className='relative flex h-full flex-col items-center justify-start gap-10 overflow-hidden p-8'>
       <div className='flex flex-row'>
         {images.map((image, idx) => (
           <motion.div
             variants={imageVariants}
             key={'images-first' + idx}
-            style={{
-              rotate: Math.random() * 20 - 10
-            }}
+            style={{ rotate: rotations[idx % rotations.length] }}
             whileHover='whileHover'
             whileTap='whileTap'
             className='-mr-4 mt-4 flex-shrink-0 overflow-hidden rounded-xl border border-neutral-100 bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800'
@@ -99,9 +95,7 @@ export const SkeletonTwo = () => {
         {images.map((image, idx) => (
           <motion.div
             key={'images-second' + idx}
-            style={{
-              rotate: Math.random() * 20 - 10
-            }}
+            style={{ rotate: rotations[idx % rotations.length] }}
             variants={imageVariants}
             whileHover='whileHover'
             whileTap='whileTap'
@@ -118,8 +112,8 @@ export const SkeletonTwo = () => {
         ))}
       </div>
 
-      <div className='bg-gradient-to-r pointer-events-none absolute inset-y-0 left-0 z-[100] h-full w-20 from-white to-transparent dark:from-black' />
-      <div className='bg-gradient-to-l pointer-events-none absolute inset-y-0 right-0 z-[100] h-full w-20 from-white to-transparent dark:from-black' />
+      <div className='pointer-events-none absolute inset-y-0 left-0 z-[100] h-full w-20 bg-gradient-to-r from-white to-transparent dark:from-black' />
+      <div className='pointer-events-none absolute inset-y-0 right-0 z-[100] h-full w-20 bg-gradient-to-l from-white to-transparent dark:from-black' />
     </div>
   )
 }
