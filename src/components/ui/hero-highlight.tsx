@@ -73,7 +73,7 @@ export const Highlight = ({ children, className }: { children: React.ReactNode; 
         backgroundPosition: 'left center',
         display: 'inline'
       }}
-      className={cn(`bg-gradient-to-r relative inline-block rounded-lg`, className)}
+      className={cn(`relative inline-block rounded-lg bg-gradient-to-r`, className)}
     >
       {children}
     </motion.span>

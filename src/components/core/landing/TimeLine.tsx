@@ -254,9 +254,9 @@ export default function TimeLine() {
   return (
     <Container className='relative z-20 mx-auto max-w-7xl py-10 lg:py-40'>
       <div className='px-8' id='time-line'>
-        <h4 className='mx-auto max-w-5xl text-center text-3xl font-medium tracking-tight text-black dark:text-white lg:text-5xl lg:leading-tight'>
+        <p className='mx-auto max-w-5xl text-center text-3xl font-medium tracking-tight text-black dark:text-white lg:text-5xl lg:leading-tight'>
           Time Line
-        </h4>
+        </p>
 
         <p className='mx-auto my-4 max-w-2xl text-center text-sm font-normal text-neutral-500 dark:text-neutral-300 lg:text-base'>
           We are the Company for Visualization & Simulation (CVS) for Research & Development of handcrafted 3D

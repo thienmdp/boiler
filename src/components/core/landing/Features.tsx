@@ -35,11 +35,11 @@ export default function Features() {
     }
   ]
   return (
-    <div className='relative z-20 mx-auto max-w-7xl py-10 lg:py-40' id='about'>
+    <div className='relative z-20 mx-auto max-w-7xl py-10 lg:py-40' id='gioi-thieu'>
       <div className='px-8'>
-        <h4 className='mx-auto max-w-5xl text-center text-3xl font-medium tracking-tight text-black dark:text-white lg:text-5xl lg:leading-tight'>
+        <p className='mx-auto max-w-5xl text-center text-3xl font-medium tracking-tight text-black dark:text-white lg:text-5xl lg:leading-tight'>
           Mục tiêu
-        </h4>
+        </p>
 
         <p className='mx-auto my-4 max-w-2xl text-center text-sm font-normal text-neutral-500 dark:text-neutral-300 lg:text-base'>
           Tiên phong trong công nghệ mô phỏng 3D, mang đến trải nghiệm độc đáo cho người dùng và thiết lập những quan hệ
