@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning={true}>
+    <html lang='en' suppressHydrationWarning={true} className='dark'>
       <body
         suppressHydrationWarning={true}
         className={cn('min-h-screen overflow-x-hidden font-sans antialiased', fontSans.variable)}
