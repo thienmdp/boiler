@@ -46,4 +46,5 @@ cd new-project
 ##
 
 git remote remove origin
-rm -rf .git
+Remove-Item -Recurse -Force .git (PS)
+rmdir /S /Q .git (CMD)
