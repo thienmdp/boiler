@@ -1,0 +1,15 @@
+{
+  "header": {
+    "login": "Đăng nhập"
+  },
+  "body": {
+    "hero_title": "hero tiêu đề"
+  },
+  "footer": {
+    "about": "Giới thiệu về chúng tôi",
+    "poli": "Policies & Privacy",
+    "contact": "Contact",
+    "numberBusiness": "Business Registration Number",
+    "address": "Đà Nẵng, Việt Nam"
+  }
+}

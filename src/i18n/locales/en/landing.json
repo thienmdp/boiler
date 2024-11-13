@@ -1,0 +1,15 @@
+{
+  "header": {
+    "login": "Sign In"
+  },
+  "body": {
+    "hero_title": "hero title"
+  },
+  "footer": {
+    "about": "About Us",
+    "poli": "Policies & Privacy",
+    "contact": "Contact",
+    "numberBusiness": "Business Registration Number",
+    "address": "Da Nang, Viet Nam"
+  }
+}

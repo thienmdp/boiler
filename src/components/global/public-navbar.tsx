@@ -18,6 +18,8 @@ import {
   NavigationMenuTrigger
 } from '../ui/navigation-menu'
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from '../ui/sheet'
+import { useTranslation } from 'react-i18next'
+import { ModeToggleI18n } from './mode-toggle-i18'
 
 type navItemsType = {
   name: string
@@ -64,7 +66,6 @@ export const PublicNavbar = ({ className }: { className?: string }) => {
     console.log(pathname)
     setVisible(true)
   }, [pathname])
-
   return (
     <AnimatePresence mode='wait'>
       <motion.div
@@ -141,6 +142,7 @@ export const PublicNavbar = ({ className }: { className?: string }) => {
             <span className='!cursor-pointer text-sm font-semibold'>Liên hệ</span>
           </Link>
           <ModeToggle />
+          <ModeToggleI18n />
         </div>
         <div className='!ml-0 flex !w-[85vw] items-center justify-between sm:hidden'>
           <Link href={path.landing} className={''}>
